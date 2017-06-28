@@ -1,5 +1,14 @@
 # Shapefile.js
 
+## Forking Message
+
+We have forked from the [original repo](https://github.com/calvinmetcalf/shapefile-js) to correct issues we encountered after switching to `webpack`. In particular:
+
+* Updated the way `proj4` was imported
+* The `dbf` reader was returning `Uint8Array` instead of `ArrayBuffer`; made adjustment for that
+
+## Original Content
+
 If you are having encoding issues in internet explorer please include [this script](https://cdn.rawgit.com/calvinmetcalf/text-encoding/4aff951959085f74a5872aeed8d79ec95b6c74c3/lib/encoding-indexes.js) as well.
 
 Redoing all of this in modern JS. Promises, Typed Arrays, other hipster things, I wouldn't say it's based on [RandomEtc's version](https://github.com/RandomEtc/shapefile-js) as much as inspired by it as there is 0 code shared and I really only read the binary ajax part of his (hence why my function has the same name, they are otherwise not related). My sources were:
