@@ -5,7 +5,6 @@
 We have forked from the [original repo](https://github.com/calvinmetcalf/shapefile-js) to correct issues we encountered after switching to `webpack`. In particular:
 
 * Updated the way `proj4` was imported
-* The `dbf` reader was returning `Uint8Array` instead of `ArrayBuffer`; made adjustment for that
 
 ## Original Content
 
